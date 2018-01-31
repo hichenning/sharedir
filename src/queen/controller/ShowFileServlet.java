@@ -3,9 +3,11 @@ package queen.controller;
 import queen.service.ReadConfigServcie;
 import queen.service.Resouse;
 
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.util.Properties;
 
+@WebServlet(name = "ShowFileServlet",urlPatterns = "/showFileServlet",loadOnStartup = 1)
 public class ShowFileServlet extends javax.servlet.http.HttpServlet {
     Resouse resouse = new Resouse();
     ReadConfigServcie readConfigServcie = new ReadConfigServcie();

@@ -14,6 +14,7 @@
 <div id="menu">
     <br/><hr>
     <a style="margin-right: 20px;" href='' onclick='javascript:history.go(-1)' >后退</a>
+    <hr>
     <form method="post" enctype="multipart/form-data" action="UploadServlet.action">
         <input type="file" multiple  name="uploadfile">
         <button type="submit" >上传</button>

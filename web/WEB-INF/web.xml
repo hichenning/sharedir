@@ -3,32 +3,5 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <servlet>
-        <servlet-name>ShowFileServlet</servlet-name>
-        <servlet-class>queen.controller.ShowFileServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ShowFileServlet</servlet-name>
-        <url-pattern>/showFileServlet</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>ShowChildFiles</servlet-name>
-        <servlet-class>queen.controller.ShowChildFiles</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ShowChildFiles</servlet-name>
-        <url-pattern>/getFilsList</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <display-name>UploadServlet</display-name>
-        <servlet-name>UploadServlet</servlet-name>
-        <servlet-class>queen.controller.UploadServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>UploadServlet</servlet-name>
-        <url-pattern>/UploadServlet.action</url-pattern>
-    </servlet-mapping>
 
 </web-app>

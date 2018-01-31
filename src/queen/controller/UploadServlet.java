@@ -17,7 +17,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import queen.common.define.FileType;
 import queen.service.ReadConfigServcie;
 
-//@WebServlet(name = "UploadServlet",urlPatterns = "/UploadServlet.action",loadOnStartup = 1)
+@WebServlet(name = "UploadServlet",urlPatterns = "/UploadServlet.action",loadOnStartup = 1)
 public class UploadServlet extends HttpServlet {
     ReadConfigServcie readConfigServcie = new ReadConfigServcie();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

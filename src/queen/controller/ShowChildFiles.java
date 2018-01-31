@@ -6,6 +6,7 @@ import queen.service.Resouse;
 
 import javax.servlet.ServletException;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.*;
 import java.util.Properties;
 
-
+@WebServlet(name = "ShowChildFiles",urlPatterns = "/getFilsList",loadOnStartup = 1)
 public class ShowChildFiles extends HttpServlet {
     Resouse resouse = new Resouse();
     ReadConfigServcie readConfigServcie = new ReadConfigServcie();
